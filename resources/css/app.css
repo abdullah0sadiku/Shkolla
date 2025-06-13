@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+[x-cloak] {
+    display: none;
+    
+}
+*{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'MajallaB';
+    font-style: normal;
+    src: url('majallab.ttf');
+}
+
+
+#logo-light{
+    font-family:'MajallaB';
+    font-size: 35px;
+}
+#name{
+    font-family:'MajallaB';
+    font-size: 45px;
+}
+
+#name_1{
+    font-family:'MajallaB';
+    font-size: 30px;
+}
+
+#logo{
+    font-family:'MajallaB';
+    font-size:50px;
+}
+
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+
+.no-scrollbar {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;    /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;           /* Safari and Chrome */
+}
+
+
+*{
+    scroll-behavior: smooth;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    outline: none;
+    box-shadow: none;
+    transition: 0.2s ease-in-out all;
+    padding: 8px;
+    margin: 10px auto; /* Centers inputs horizontally */
+    width: 100%; /* Ensure the input takes up the full container width */
+}
+
+/* For larger screens (desktop) */
+@media (min-width: 1024px) {
+    .input {
+        width: 60%; /* Adjust width for desktop */
+        max-width: 600px; /* Max width to ensure it doesn't stretch too much */
+        margin-left: 0; /* Align left for desktop */
+    }
+}
+
+
+.check {
+    width: 30px;
+    height: 20px;
+    border: 1px solid white;
+    outline: none;
+}
+.check:checked {
+    background-color: rgb(125 211 252 / var(--tw-bg-opacity));
+}
+.input::placeholder {
+    color: white; /* Placeholder color */
+}
+.input:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom-color: white;
+    border-bottom: 5px solid white;
+    transition: 0.2s ease-in-out all;
+}
